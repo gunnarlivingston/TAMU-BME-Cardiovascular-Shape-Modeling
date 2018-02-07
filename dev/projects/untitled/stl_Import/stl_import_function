@@ -1,0 +1,15 @@
+import numpy
+from stl import mesh
+
+location = input("What is the full directory of the stl file?: ")
+file = open(location)
+data = file.read()
+
+print(data)
+
+data = mesh.Mesh.from_file(file)
+
+
+
+
+
